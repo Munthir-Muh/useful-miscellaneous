@@ -48,7 +48,7 @@ namespace System.Collections.Generic
         }
         public IEnumerable<T> GoToPageOfRecordNo(int recordNo)
         {
-            var recortPageNo = Math.Ceiling((double)recordNo / PageSize);
+            var recordPageNo = Math.Ceiling((double)recordNo / PageSize);
             return GoToPageNo(PageSize);
         }
         private IEnumerable<IEnumerable<T>> Browse()
